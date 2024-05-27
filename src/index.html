@@ -1,29 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Random Card Generator</title>
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
+      href="style.css"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="full-screen-div">
+      <h1>This is The Random Card Generator.</h1>
+      <div class="container">
+        <div class="card">
+          <div class="cardNumber">
+            <p class="suit suit-top">♦</p>
+          </div>
+          <div class="cardSuit">
+            <div class="container-number">
+              <p class="number">5</p>
+            </div>
+          </div>
+          <div class="cardNumber">
+            <p class="suit suit-bottom">♦</p>
+          </div>
+        </div>
+      </div>
+      <!-- end card-->
+
+      <div class="container">
+        <button
+          id="new-card-button"
+          type="button"
+          class="basic-button"
+          >Click for New Card
+        </button>
+      </div>
+      <!-- End Button -->
+
+      <div class="container">
+        <input
+          type="text"
+          id="basic-input-height"
+          class="styled-input"
+          placeholder="Height..."
+        />
+
+        <input
+          type="text"
+          id="basic-input-width"
+          class="styled-input"
+          placeholder="Width..."
+        />
       </div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
+
