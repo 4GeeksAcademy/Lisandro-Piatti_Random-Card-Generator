@@ -37,7 +37,7 @@ const getRandomCard = () => {
   }
 };
 
-const tenSecondsForRandomCard = function () {
+const tenSecondsForRandomCard = function() {
   getRandomCard();
   setTimeout(tenSecondsForRandomCard, 10000);
 };
@@ -55,7 +55,7 @@ const inputWidth = document.querySelector("#basic-input-width");
 let arrayAuxHeight = [];
 let arrayAuxWidth = [];
 
-inputHeight.addEventListener("keypress", (e) => {
+inputHeight.addEventListener("keypress", e => {
   arrayAuxHeight.push(e.key);
   // console.log(arrayAuxHeight);
   // console.log(arrayAuxHeight[arrayAuxHeight.length - 1]);
@@ -67,7 +67,7 @@ inputHeight.addEventListener("keypress", (e) => {
   }
 });
 
-inputWidth.addEventListener("keypress", (e) => {
+inputWidth.addEventListener("keypress", e => {
   arrayAuxWidth.push(e.key);
   // console.log(arrayAuxWidth);
   // console.log(arrayAuxWidth[arrayAuxWidth.length - 1]);
